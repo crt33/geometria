@@ -7,6 +7,10 @@ public class Circulo_CRT extends FiguraGeometrica_CRT {
 	public Circulo_CRT(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		
+		if (r<0) {
+			r=r*+1;
+		}
 	}
 
 	@Override
